@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1> Marla Schevker</h1>
+        <h4>Front-end Web Developer</h4>
+      </div>
+      <nav>
+          <ul>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#resume">Resume</a></li>
+            <li class="contactme nav-item"><a href="#contact">Contact Me</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main id="top">
+      <section id="welcome">
+        <div class="welcome desktop">
+          <img src="./images/logo.png" alt="Marla's Memoji">
+          <h2>Hi. Welcome to my website.</h2>
+        </div>
+        <div class="welcome mobile clearfix">
+          <img src="./images/logo.png" alt="Marla's Memoji">
+          <br/>
+          <h2>Hi. Welcome to my website.</h2>
+        </div>
+        <span class="clearfix"><hr></span>
+      </section>
+      <section class="projects">
+        <h4 id="projects"> Some of my work</h4>
+        <div class="portfolio">
+          <div class="projectlist">
+         <button href="#" class="active list list1" id="list1" type="button" onclick="show('project1')"> Shop Page Redesign </button>
+          <button href="#" class="list list3" id="list3" type="button" onclick="show('project3')"> Shakeology Recipes</button>
+          <button href="#" class="list list2" id="list2" type="button" onclick="show('project2')"> 645 Commitment </button>
+          <button href="#" class="list list4" id="list4" type="button" onclick="show('project4')">Total Solution Pack Pop Up</button>
+        </div>
+        <div class="projectitems">
+          <div class="project1" id="project1">
+          <a href="./images/Shopredesign.png" target="_blank"><img src="./images/Shopredesign-mini.jpg" alt="Beachbody Shop Page Redesigned"></a>
+           <p class="projectcopy"> I was tasked with developing a new look for the Beachbody Shop Page. This was built using Endeca and WCS with HTML and CSS. As there was no existing template to give the mobile product slider functionality they requested, I had to adapt existing templates using css to achieve the desired outcome for both desktop and mobile view.</p>
+         </div>
+        <div class="project2" id="project2">
+          <a href="./images/645commitment.png" target="_blank"><img src="./images/645commitment-mini.jpg" alt="645 Commitment"></a>
+           <p class="projectcopy"> I was asked to build a standalone page to outline the 645 Commitment reward program when the 645 program launched. This page was custom designed and built from provided proof. I built the page using Endeca, WCS and Atom with HTML and CSS.<br/><br/> <a href="https://github.com/optimissist/TBB-Portfolio/tree/main/645%20Commitment" target="_blank">View on GitHub.</a> </p>
+         </div>
+          <div class="project3" id="project3">
+          <a href="./images/Shkflavorsdesktop.png" target="_blank"><img src="./images/Shkflavorsdesktop-mini.jpg" alt="Beachbody Shop Page Redesigned"></a>
+           <p class="projectcopy">With the launch of Shakeology in France, I was asked to build a new locale of the Shakeology microsite and refresh the recipe tiles for the UK and France. Because the requested layout was not from a standard template, I created custom designs from scratch for desktop and mobile views. This was built with WCS and Atom using HTMl and CSS.<br/><br/> <a href="https://github.com/optimissist/TBB-Portfolio/tree/main/UK:France%20Shakeology%20Microsite" target="_blank">View on GitHub.</a></p>
+         </div>
+          <div class="project4" id="project4">
+          <a href="./images/PCPopout.png" target="_blank"><img src="./images/PCPopout-mini.jpg" alt="Beachbody Shop Page Redesigned"></a>
+           <p class="projectcopy">The launch of the Preferred Customer program brought about the need for a new template. I created this pop out so it could be easily parsed and reused by developers with minimal coding knowledge. I made this popout using BCC, WCS and Atom. <br/><br/> <a href="https://github.com/optimissist/TBB-Portfolio/tree/main/Preferred%20Customer%20Pop%20Out" target="_blank">View on GitHub.</a></p>
+         </div>
+        </div>
+          </section>
+
+      <section class="about">
+          <hr>
+          <h4 id="about">About the developer</h4>
+          <div class="aboutme">
+          <div class="bio">
+          <p>I thought I wanted to be a journalist but it turns out, I just like making pretty things with words. Since my first coding class 20 years ago, I have always tried to find ways to incorporate web development into my work. Now, it is my passion <em>and</em> my profession.</p>
+          <p>I am always interested in new opportunities to use my experience and skills.</p>
+          <p>So, if you are looking for a front-end web engineer or want to chat about front-end web development, reach out through the <a href="#contact">contact form below</a> or find me on <a href="https://github.com/optimissist" target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/marlaschevker/" target="_blank">LinkedIn</a>.</p>
+          <button type="button" class="aboutbutton"> <a href="#contact">Contact Me</a></button>
+        </div>
+        <div class="skills">
+          <h5> Skills </h5>
+          <div class="skill-items">
+          <div class="skills-skill">HTML</div>
+          <div class="skills-skill">CSS3</div>
+          <div class="skills-skill">JavaScript</div>
+          <div class="skills-skill">jQuery</div>
+          <div class="skills-skill">BCC</div>
+          <div class="skills-skill">WCS</div>
+          <div class="skills-skill">Endeca</div>
+          <div class="skills-skill">Contentful</div>
+          <div class="skills-skill">Wordpress</div>
+          <div class="skills-skill">Jira</div>
+          <div class="skills-skill">Atom</div>
+        </div>
+        </div>
+      </div>
+      </section>
+      <section class="resume">
+        <hr class="hr1">
+        <div class="resumelist">
+        <div class="certs">
+          <h4> Experience <br/><span class="arrow">&#8594;</span><br/>Education<br/><span class="arrow">&#8595;</span></h4>
+          <ul>
+            <li><a href="./images/SchevkerResume.pdf" target="_blank"> My Resume </a></li>
+            <li> Front-end Engineer Path Certification - Codecademy</li>
+            <li><a href="./images/JavaScript.pdf" target="_blank">JavaScript Certification</a> - OneMonth</li>
+            <li><a href="./images/jQuery.pdf" target="_blank">jQuery Certification</a> - OneMonth</li>
+            <li><a href="./images/ResponsiveDesign.pdf" target="_blank">Responsive Resign Certification</a> - OneMonth</li>
+            <li><a href="./images/Wordpress.pdf" target="_blank">Wordpress Certification</a> - OneMonth</li>
+            <li> BA - 2010 - California State University Northridge</li>
+            <li> MA - 2014 - University of Southern California </li>
+          </ul>
+        </div>
+        <div class="experience">
+          <h5><a href="https://www.teambeachbody.com/" target="_blank" id="resume">Beachbody</a> — 2018 to present</h5>
+          <h6>Merchandising Operations Manager • April 2022 to Present</h6>
+          <ul>
+            <li>Create and manage new and existing pages for the site in Endeca, Contentful and WCS</li>
+            <li>Triage technical issues related to the content management systems both for the team and upon request from outside departments</li>
+            <li>Prepare programs for the team to work on (products, programs, entitlements, etc)
+            <li>Prep and execute all launches to production</li>
+            <li>Provide training and support to Merchandising Team members</li>
+            <li>Manage technical aspects of Merchandising Team</li>
+          </ul>
+
+          <h6>Senior CMS Specialist • July 2021 to April 2022</h6>
+          <ul>
+            <li>Creates unique modules and pages within the confines of the CMS templates</li>
+            <li>Merchandises products, hero banners, and other modules</li>
+            <li>Builds sell pages for individual products and programs, often versioned</li>
+            <li>Manages site launches for new and/or updated products, programs, etc.</li>
+            <li>Provides Quality Assurance assistance when needed</li>
+            <li>Helps team troubleshoot CMS issues</li>
+          </ul>
+
+          <h6>CMS Operations Specialist • August 2019 to July 2021</h6>
+          <ul>
+            <li>Merchandised products, hero banners, and other modules</li>
+            <li>Built sell pages for individual products and programs</li>
+            <li>Provided Quality Assurance assistance when needed</li>
+          </ul>
+
+          <h6>CMS Web Content Coordinator • December 2018 to August 2019</h6>
+          <ul>
+            <li>Provided quality assurance to ensure new content posted on teambeachbody.com is consistent with team standards</li>
+            <li>Assisted in the creation of new content and editing of existing content within team CMS systems</li>
+            <li>Developed a style manual and other supplemental documentation</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="hr2">
+      </section>
+      <section class="contact">
+        <div class="contactform">
+        <h4 id="contact">Contact Me</h4>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mjvzvegn" method="post">
+          <fieldset id="fs-frm-inputs">
+            <label for="full-name">Full Name</label>
+            <input type="text" name="name" id="full-name" placeholder="Name" required>
+            <label for="email-address">Email Address</label>
+            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required>
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </fieldset>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      </section>
+      <footer>
+        <div class="foot">
+          <p> This website was brought to you with &nbsp;<span style="color: red;">&#10084;</span>&nbsp; by Marla Schevker.</p>
+        </div>
+      </footer>
+    </main>
+    <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  </body>
+</html>

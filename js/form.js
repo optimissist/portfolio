@@ -1,0 +1,8 @@
+// console.log("hello world");
+
+
+  window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
